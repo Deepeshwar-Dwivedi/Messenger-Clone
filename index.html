@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Messenger Clone</title>
+  <meta name="viewport" content="width=420,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for modern rounded look -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="avatar">
+        <img src="https://ui-avatars.com/api/?name=Bot&background=075e54&color=fff" alt="Bot Avatar">
+      </div>
+      <div class="header-title">
+        <span>Messenger Clone</span>
+        <span class="status">● Online</span>
+      </div>
+      <div class="header-actions">
+        <button class="header-btn" title="Video Call"><svg width="20" height="20" viewBox="0 0 24 24"><path fill="#fff" d="M17 10.5V7c0-1.1-.9-2-2-2H5C3.9 5 3 5.9 3 7v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-3.5l4 4v-11l-4 4z"/></svg></button>
+        <button class="header-btn" title="More"><svg width="20" height="20" viewBox="0 0 24 24"><circle cx="5" cy="12" r="2" fill="#fff"/><circle cx="12" cy="12" r="2" fill="#fff"/><circle cx="19" cy="12" r="2" fill="#fff"/></svg></button>
+      </div>
+    </div>
+    <div id="chat-box" class="chat-box">
+      <!-- Messages will appear here -->
+    </div>
+    <div class="chat-input">
+      <button id="attach-btn" class="input-btn" title="Attach"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#777" d="M16.5,6.5V16A4.5,4.5 0 0,1 12,20.5A4.5,4.5 0 0,1 7.5,16V7.5A2.5,2.5 0 0,1 10,5A2.5,2.5 0 0,1 12.5,7.5V16A0.5,0.5 0 0,1 12,16.5A0.5,0.5 0 0,1 11.5,16V7.5H10V16A2,2 0 0,0 12,18A2,2 0 0,0 14,16V7.5A4.5,4.5 0 0,0 9.5,3A4.5,4.5 0 0,0 5,7.5V16A7,7 0 0,0 12,23A7,7 0 0,0 19,16V6.5H16.5Z"/></svg></button>
+      <input id="user-input" type="text" placeholder="Type a message..."/>
+      <button id="send-btn" class="input-btn" title="Send"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="#fff" d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/></svg></button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
